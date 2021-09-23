@@ -197,6 +197,11 @@ a.active::before{
 .service-item:hover p{
     color: #fff !important;
 }
+.service-item:hover .hlaka-japsa::before{
+    width: 50px;
+    height: 3px;
+    background-color: #fff !important;
+}
 .service-item span{
     display: inline-block;
     height: 70px;
@@ -226,6 +231,19 @@ a.active::before{
     z-index: -1;
 }
 
+
+.hlaka-japsa{
+    position: relative;
+}
+.hlaka-japsa::before{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #5252f0;
+}
 /* animation-section */
 
 .animation-section{
@@ -296,4 +314,16 @@ a.active::before{
         transform: scale(1.8);
         opacity: 0;
     }
+}
+.hlaka-japsa2{
+    position: relative;
+}
+.hlaka-japsa2::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 33%;
+    width: 124px;
+    height: 3px;
+    background-color: #fff;
 }
